@@ -1,0 +1,100 @@
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="jumbotron jumbotron-fluid text-center shadow-lg p-3 mb-5 bg-dark rounded">
+  <div class="container">
+    <h1 class="display-3 text-light">צור קשר</h1>
+    <p class="lead text-light"> ניתן ליצור עמנו קשר בימים א' עד ה' בין השעות 8:00 ל18:00 בטלפון או במייל </p>
+    <address>
+      <a href="tel:+972547578782">חייגו אלינו</a>
+    </address>
+    <address>
+      <a href="almacustomerserviceil@gmail.com">שלחו אלינו מייל</a><br> 
+    </address>
+    <p class="lead text-light">.רוצים שאנחנו נחזור אליכם? השאירו פרטים ואנחנו נחזור אליכם במהלך היום </p>
+    <p class="text-warning "> .בפניה לאחר שעות הפעילות, נחזור אליכם ביום הפעילות הבא* </p>
+  </div>
+</div>
+
+
+<legend class="text-dark d-flex justify-content-center"><h3>השאר פניה</h3></legend>
+<form action="/sent"method="POST" id="form" class="bg-light text-center">
+  <div class="form-group row d-flex flex-row-reverse">
+    <label for="name" class="col-5  col-form-label text-dark font-weight-bold">שם מלא</label> 
+    <div class="col-6 badge badge-pill ml-auto ">
+      <input id="name" name="name" type="text" required="required" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row d-flex flex-row-reverse">
+    <label for="number" class="col-5 col-form-label text-dark font-weight-bold ">מספר טלפון</label> 
+    <div class="col-6 badge badge-pill">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="fa fa-phone"></i>
+          </div>
+        </div> 
+        <input id="number" name="number" type="text" class="form-control" required="required" aria-describedby="numberHelpBlock">
+      </div> 
+      <span id="numberHelpBlock" class="form-text text-right">מספר טלפון זמין לחזרה אליכם</span>
+    </div>
+  </div>
+  <div class="form-group row d-flex flex-row-reverse">
+    <label for="email" class="col-5 col-form-label text-dark font-weight-bold">כתובת מייל</label> 
+    <div class="col-6 badge badge-pill">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="fa fa-at"></i>
+          </div>
+        </div> 
+        <input id="email" name="email" type="text" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row d-flex flex-row-reverse">
+    <label for="subject" class="col-5 col-form-label text-dark font-weight-bold">נושא פנייתך</label> 
+    <div class="col-6 badge badge-pill">
+      <input id="subject" name="subject"  placeholder="שירות לקוחות/מכירות/אחר" type="text" class="form-control text-right" required="required">
+    </div>
+  </div>
+  <div class="form-group row d-flex flex-row-reverse">
+    <label for="textarea" class="col-5 col-form-label text-dark font-weight-bold">כתוב לנו</label> 
+    <div class="col-6 badge badge-pill">
+      <textarea id="message" name="textarea" cols="40" rows="5" placeholder="אופציה" class="form-control text-right" aria-describedby="textareaHelpBlock"></textarea> 
+    </div>
+  </div> 
+  <div class="form-group row">
+    <div class="offset-6 col-6 ">
+      <button id ="submit"  name="submit" type="submit" class="btn btn-warning">שלח</button>
+
+    </div>
+  </div>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $('form').on('submit', (e)=> {
+    e.preventDefault();
+
+    const email = $('#email').val().trim();
+    const name = $('#name').val().trim();
+    const number = $('#number').val().trim();
+    const subject = $('#subject').val().trim();
+    const textarea = $('#message').val().trim();
+
+    const data = {
+      email,
+      name,
+      number,
+      subject,
+      textarea
+    };
+
+    $.post('/sent',data,function(){
+      console.log('@!!');
+    })
+  });
+</script>
+
+
