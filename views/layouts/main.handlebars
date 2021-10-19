@@ -9,30 +9,58 @@
     <style>
         .nav-link {
             color: black !important;
+            font-family: 'Heebo', sans-serif;
+            font-weight: bolder;
+            font-size: 25px;
+            margin: 15px;
             }
+        .active, .nav-link:hover {
+            background-color: rgb(212,175,55);;
+        }
+        .countach {
+	font-family: countach,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+      
         .navbar-dark {
             background: #fff;
-            height: 120px;
+            height: 130px;
             box-shadow: 0px 2px 5px #777;
         }
-        .navbar-brand{
-            float:right !important;
+        .navbar-brand {
+            transform: translateX(-50%);
+            left: 88%;
+            top:8px ;
+            position: absolute;
         }
-  
+        .collapse {
+            transform: translateX(-50%);
+            left: 63%;
+            margin-top: 20px;
+            top:10px ;
+            position: absolute;
+        }
 
 
 
+      
+        
 
     </style>
 </head>
 <body>
         {{>_navbar}}
+      
     <div class="container-fluid">
-  
          {{{body}}}
     </div>
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <footer class="text-center">
+        <p>Author: Mai Yehezkel<br>
+        <a href="mailto:hege@example.com">mai@example.com</a></p>
+    </footer>
 </body>
 
 </html>

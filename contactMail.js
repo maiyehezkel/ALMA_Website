@@ -15,14 +15,19 @@ const sendMail = (number, name, subject, email,message)=>{
         name: name,
         number: number,
         subject: subject,
-        text: "שם:"+name+" טלפון:"+number+" כתובת מייל:"+email+" הודעה:"+message
+        text: "שם:"+name+
+            " טלפון:"+number+
+            " כתובת מייל:"+email+
+            " הודעה:"+message
    
     };
     transporter.sendMail(mailOptions, function(err, info){
         if (err) {
             console.log(error);
         } else {
+            
             console.log('Email sent: ' + info.response);
+            
         }
         });
     }

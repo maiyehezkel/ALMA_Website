@@ -1,23 +1,320 @@
-<table style="width: 75%">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="\tableStyle.css">
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js">
+</script>
+<script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js">
+</script>
+
+<h1 class="mb-5 text-center">הסלטים שלנו</h1>
+<div dir="rtl">
+<table id="sortTable">
     <colgroup>
-       <col span="1" style="width: 25%;">
        <col span="1" style="width: 75%;">
+       <col span="1" style="width: 25%;">
     </colgroup>
     <div class="text-right">
   <thead>
     <tr>
-      <th  scope="col">משקל</th>
       <th scope="col">סוג</th>
- 
+      <th scope="col">משקל אריזה</th>
     </tr>
   </thead>
    </div>
-    <tbody>
+    <tbody id="tablrbody">
         <tr>
-            <td class="text-right" style="text-right">15%</td>
-            <td style="background-color: #aaa">70%</td>
-          
+          <td>חומוס אסלי</td>
+            <td>3 ק"ג</td> 
         </tr>
+        <tr>
+     
+            <td >חומוס ישראלי</td>
+                   <td >3 ק"ג</td>
+        </tr>
+        <tr>
+            
+            <td >חומוס ליאם</td>
+            <td>3 ק"ג</td>
+        </tr>
+        <tr>
+            
+            <td >חומוס מזרחי</td>
+            <td>3 ק"ג</td>
+        </tr>
+        <tr>
+           
+            <td >חומוס מסעדות</td>
+            <td>3 ק"ג</td>
+        </tr>
+        <tr>
+            
+            <td >חומוס גל</td>
+            <td>3 ק"ג</td>
+        </tr>
+        <tr>
+            
+            <td >חציל במיונז</td>
+            <td>3 ק"ג</td>
+        </tr>
+        <tr>
+            
+            <td >טחינה אסלית לבנה</td>
+            <td>3 ק"ג</td>
+        </tr>
+        <tr>
+        
+            <td >גזר מרוקאי</td>
+            <td>3 ק"ג</td>
+        </tr>
+        <tr>    <td >גזר בלימון</td>
+            <td>3 ק"ג</td>
+        
+        </tr>
+        <tr>
+          
+            <td >צ'רשי</td>
+            <td>3 ק"ג</td>
+        </tr>
+        <tr>
+            
+            <td >סלק אדום</td>
+            <td>3 ק"ג</td>
+        </tr>
+        <tr>
+            <td >חציל איטלקי (פיקנטי)</td>
+            <td>3 ק"ג</td>
+        </tr>
+        <tr>
+           
+            <td >שום כתוש</td>
+            <td>3 ק"ג</td>
+        </tr>
+        <tr>
+            <td >אריסה פיקנטית</td>
+            <td>3 ק"ג</td>
+        </tr>
+        <tr>
+           
+            <td >סחוג אדום</td>
+            <td>3 ק"ג</td>
+        </tr>
+        <tr>
+            <td>חמוצים סיני</td>
+            <td>3 ק"ג</td>
+        </tr>
+        <tr>
+          
+            <td >חמוצים טורשי</td>
+            <td>3 ק"ג</td>
+        </tr>
+        <tr>
+       
+            <td >כרוב אדום בתחמיץ</td>
+            <td>3 ק"ג</td>
+        </tr>
+        <tr>
+            
+            <td >כרוב לבן בתחמיץ</td>
+            <td>3 ק"ג</td>
+        </tr>
+        <tr>
+          
+            <td >כרוב אדום במיונז</td>
+            <td>3 ק"ג</td>
+        </tr>
+        <tr>
+           
+            <td >סלט טורקי</td>
+            <td>3 ק"ג</td>
+        </tr>
+        <tr>
+         
+            <td >מטבוחה</td>
+            <td>3 ק"ג</td>
+        </tr>
+        <tr>
+          
+            <td >תפוח אדמה במיונז</td>
+            <td>3 ק"ג</td>
+        </tr>
+        <tr>
+         
+            <td >לימון כבוש</td>
+            <td>3 ק"ג</td>
+        </tr>
+        <tr>
+            
+            <td >תערובת לפלאפל</td>
+            <td>4 ק"ג</td>
+        </tr>
+        <tr>
+            
+            <td >חומוס המלך</td>
+            <td>2 ק"ג</td>
+        </tr>
+        <tr>
+            
+            <td >טחינה לבנה</td>
+            <td>2 ק"ג</td>
+        </tr>
+        <tr>
+          <td >טחינה ירוקה</td> 
+           <td>2 ק"ג</td>
+            
+        </tr>
+        <tr> <td >סלט קולסלואו</td>
+            <td>2 ק"ג</td>
+           
+        </tr>
+        <tr> <td >תירס מקסיקני</td>
+            <td>2 ק"ג</td>
+           
+        </tr>
+        <tr><td >שקשוקה</td>
+            <td>2 ק"ג</td>
+            
+        </tr>
+        <tr> <td >רצועות גמבה תחמיץ</td>
+            <td>2 ק"ג</td>
+           
+        </tr>
+        <tr> <td >סלט בטטה צ'ילי</td>
+            <td>2 ק"ג</td>
+           
+        </tr>
+        <tr> <td >דלעת על האש</td>
+            <td>2 ק"ג</td>
+           
+        </tr>
+        <tr><td >משוויה פלפלים</td>
+            <td>2 ק"ג</td>
+            
+        </tr>
+        <tr><td >חציל סביח</td>
+            <td>1 ק"ג</td>
+            
+        </tr>
+        <tr><td >חציל רומני</td>
+            <td>2 ק"ג</td>
+            
+        </tr>
+        <tr><td >חציל על האש</td>
+            <td>2 ק"ג</td>
+            
+        </tr>
+               <tr><td >חומוס המלך</td>
+            <td>2 ק"ג</td>
+            
+        </tr>
+        <tr><td >חציל במיונז על האש</td>
+            <td>3 ק"ג</td>
+            
+        </tr>
+        <tr><td >חציל בטחינה</td>
+            <td>2 ק"ג</td>
+            
+        </tr>
+        <tr><td >סלט ביצים</td>
+            <td>2 ק"ג</td>
+            
+        </tr>
+       <tr><td >אבוקדו ירקות (גואקמולי)</td>
+            <td>2 ק"ג</td>
+            
+        </tr>
+        <tr><td >סחוג ירוק פרימיום</td>
+            <td>2 ק"ג</td>
+            
+        </tr>
+       <tr><td >פטריות מטוגנות</td>
+            <td>2 ק"ג</td>
+            
+        </tr>
+        <tr><td >גרגירי חומוס בטאטבילי</td>
+            <td>2 ק"ג</td>
+            
+        </tr>
+        <tr><td >טאטבילי</td>
+            <td>2 ק"ג</td>
+            
+        </tr>
+        <tr><td >פסטו בזיליקום</td>
+            <td>1 ק"ג</td>
+            
+        </tr>
+       <tr><td >צ'ימיצ'ורי</td>
+            <td>1 ק"ג</td>
+            
+        </tr>
+        <tr><td >ממרח עגבניות</td>
+            <td>1 ק"ג</td>
+            
+        </tr>
+       <tr><td >איולי פלפלים</td>
+            <td>1 ק"ג</td>
+            
+        </tr>
+        <tr><td >ממרח זיתים טפנד קלמטה</td>
+            <td>1 ק"ג</td>
+            
+        </tr>
+       <tr><td >ממרח זיתים ירוקים</td>
+            <td>1 ק"ג</td>
+            
+        </tr>
+        <tr><td >חלפיניו</td>
+            <td>1 ק"ג</td>
+            
+        </tr>
+       <tr><td >שום לימון</td>
+            <td>4 ק"ג</td>
+            
+        </tr>
+        <tr><td >חציל מרוקאי</td>
+            <td >2 ק"ג</td>
+            
+        </tr>
+       <tr><td >חציל אסייתי</td>
+            <td>2 ק"ג</td>
+            
+        </tr>
+        <tr><td >חציל פסטו</td>
+            <td>2 ק"ג</td>
+            
+        </tr>
+        <tr><td >חציל שלם שרוף על האש</td>
+            <td>1.7 ק"ג</td>
+            
+        </tr>
+        <tr><td >פלפל חריף מרוקאי מטוגן</td>
+            <td>2 ק"ג</td>
+            
+        </tr>
+            
+      
     </tbody>
+    
    
 </table>
+</div>
+<script>
+  $(document).ready(function(){
+      $('#sortTable').dataTable({
+
+              language: {
+                url: 'https://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Hebrew.json'
+              }
+          
+              });
+              
+  });
+
+</script>
+
