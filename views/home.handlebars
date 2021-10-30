@@ -1,3 +1,191 @@
+<style>
+
+  .elementr {
+    height: 65px;
+    width: 65px;
+    background-color: black;
+    animation: 
+      tire 3s ease infinite alternate, 
+      nudge 5s linear infinite alternate;
+    border-radius: 100%;
+    display:inline-block;
+    border: 5px solid white;
+    margin-top:110px;
+    position: relative;
+    z-index: 3;
+  }
+  .elementl {
+    height: 65px;
+    width: 65px;
+    background-color: black;
+    animation: 
+      tire 3s ease infinite alternate, 
+      nudge 5s linear infinite alternate;
+    border-radius: 100%;
+    display: inline-block;
+    border: 5px solid white;
+    margin-right: 70px;
+    margin-left: -45px;
+    position: relative;
+    z-index: 3;
+  }
+  .tirerl {
+    height: 55px;
+    width: 55px;
+    background-color: black;
+    animation: 
+      tire 3s ease infinite alternate, 
+      nudge 5s linear infinite alternate;
+    border-radius: 100%;
+    display: inline-block;
+    margin-right: 70px;
+
+  }
+  .tirerr {
+    height: 55px;
+    width: 55px;
+    background-color: black;
+    animation: 
+      tire 3s ease infinite alternate, 
+      nudge 5s linear infinite alternate;
+    border-radius: 100%;
+    display: inline-block;
+    margin-left: 16px;
+    
+  }
+  .wheel{
+  height: 30px;
+  width: 30px;
+  background-color: rgb(212,175,55);
+  border-radius: 100%;
+  border: 17px solid rgb(212,175,55);
+  margin-top: 10px;
+  margin-left: 10px;
+
+
+}
+  .zindex{
+    position: relative;
+    margin-top: -67px;
+
+  }
+
+  .rec {
+  height: 140px;
+  width: 220px;
+  background-color: black;
+  animation: 
+    pulse 3s ease infinite alternate, 
+    nudge 5s linear infinite alternate;  
+  border-radius: 5%;
+  position:absolute;
+  border: 2px solid black;
+  z-index: 1;
+}
+
+.parall {
+	transform: skew(-20deg);
+	background: rgb(212,175,55);
+  border-radius: 15%;
+  margin-left: 30px;
+  margin-top: -70px;
+  z-index: -2;
+  width: 30px;
+  height: 50px;
+}
+.parall:before {
+  content: '';
+  position: absolute;
+  height: 90%;
+  width: 100%;
+
+}
+.parall:before {
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-radius: 15%;
+}
+
+.door{
+  width: 90px;
+  height: 70px;
+  background: rgb(212,175,55);
+  border-radius: 20%;
+  display:block;
+  margin-left: -70px;
+  margin-top: 70px;
+  border: 2px solid black;
+  position: absolute;
+    animation: 
+    pulse 3s ease infinite alternate, 
+    nudge 5s linear infinite alternate;  
+    
+}
+.window{
+      border-bottom: 42px solid black;
+      border-left: 25px solid black;
+      border-right: 30px solid black;
+      border-radius: 5%;
+      margin-left: 8px;
+      margin-top: 6px;
+      position: absolute;
+     
+}
+.handle {
+  border: 3px solid black;
+  border-radius: 5px;
+  width: 15px;
+  opacity: 1;
+  margin-top: 15px;
+  margin-left: 45px;
+}
+
+
+@keyframes pulse {
+  0%, 100% {
+    background-color: rgb(212,175,55);
+  }
+  50% {
+    background-color: rgb(212,175,55);
+  }
+}
+@keyframes tire {
+  0%, 100% {
+    background-color: black;
+  }
+  50% {
+    background-color:black;
+  }
+}
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(300px, 0);
+  }
+  
+  50% {
+    transform: translate(600px, 0);
+  }
+  
+  80% {
+    transform: translate(300px, 0);
+  }
+}
+
+
+
+</style>
+
+
+<div class="rec"></div>
+<div class="door"> <div class="handle"></div><div class="parall" style="width: 80px; height: 60px;"> <div class="window" ></div> </div></div>
+<div class="elementl"> <div class="wheel"></div></div>
+<div class="elementr"> <div class="wheel"></div></div>
+<div class="zindex">
+   <div class="tirerl" ><div class="wheel" ></div></div>
+   <div class="tirerr"><div class="wheel" ></div></div>
+</div>
+
+
 
 <div class="jumbotron jumbotron-fluid text-center text-muted p-3">
   <div class="container">
@@ -9,10 +197,3 @@
   </div>
 </div>
 
-<div class="ribbon">
-  ברוכים הבאים לעלמא
-  <i></i>
-  <i></i>
-  <i></i>
-  <i></i>
-</div>
