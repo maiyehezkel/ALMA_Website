@@ -1,199 +1,138 @@
-<style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  .elementr {
-    height: 65px;
-    width: 65px;
-    background-color: black;
-    animation: 
-      tire 3s ease infinite alternate, 
-      nudge 5s linear infinite alternate;
-    border-radius: 100%;
-    display:inline-block;
-    border: 5px solid white;
-    margin-top:110px;
-    position: relative;
-    z-index: 3;
-  }
-  .elementl {
-    height: 65px;
-    width: 65px;
-    background-color: black;
-    animation: 
-      tire 3s ease infinite alternate, 
-      nudge 5s linear infinite alternate;
-    border-radius: 100%;
-    display: inline-block;
-    border: 5px solid white;
-    margin-right: 70px;
-    margin-left: -45px;
-    position: relative;
-    z-index: 3;
-  }
-  .tirerl {
-    height: 55px;
-    width: 55px;
-    background-color: black;
-    animation: 
-      tire 3s ease infinite alternate, 
-      nudge 5s linear infinite alternate;
-    border-radius: 100%;
-    display: inline-block;
-    margin-right: 70px;
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="\all.css">
 
-  }
-  .tirerr {
-    height: 55px;
-    width: 55px;
-    background-color: black;
-    animation: 
-      tire 3s ease infinite alternate, 
-      nudge 5s linear infinite alternate;
-    border-radius: 100%;
-    display: inline-block;
-    margin-left: 16px;
-    
-  }
-  .wheel{
-  height: 30px;
-  width: 30px;
-  background-color: rgb(212,175,55);
-  border-radius: 100%;
-  border: 17px solid rgb(212,175,55);
-  margin-top: 10px;
-  margin-left: 10px;
+<br>
+<div class="font">
+<div class="center">
+<h1 dir="rtl" class="start about text-center" style="color:black; font-size:15px;">
+<br><span style="font-size:25px;">הלקוחות שלנו הם שותפינו לדרך, הצלחתם היא הצלחתנו.<br></span>
+<br> אנו בעלמא מתחייבים למתן שירות מיטבי, זמינות תמידית של מגוון מוצרים, מוסר תשלומים גבוה, אספקה מהירה וגמישות לצרכי הלקוח המשתנים.</h1>
+<br>
+<div class="about">
+<a href="/catalog" class="btn">המוצרים שלנו</a> 
+<h1 dir="rtl" class="start text-center" style="color:black; font-size:30px;"><br>מי אנחנו?</h1> <br>
+<p dir="rtl" class="text-center">עלמא הינה אחת החברות המובילות בארץ לשיווק והפצה של מזון בטמפרטורה מבוקרת למסעדות, מוסדות ועסקים.<br>
+עלמא שיווק והפצה נוסדה תוך כוונה להנגיש את השירות הטוב ביותר, המוצרים הטובים ביותר והמחירים הנוחים ביותר, 
+חברתנו שמה את הלקוח בראש מעיינותיה ולכן מצליחה להנגיש לכלל הלקוחות מגוון רחב של מוצרים אשר יתאימו לכל בקשת לקוח,
+החל ממגוון רחב של חברות עמם אנו עובדים ועד לפרטים הקטנים ביותר כמו סוגי המוצרים השונים.
+אנו בחברה שמנו לנו למטרה לספק ללקוחותינו מגוון רחב של פתרונות לצרכיהם השונים, ולכן דאגנו לשעות פעילות רחבות ולגישה למספר רחב של מפעלים במקביל,
+פעולות אלו מאפשרות לנו להשיג מטרה זו ולספק ללקוחותינו מגוון רחב של מוצרים מקטגוריות שונות במחירים שונים ובזמן הנוח לעסק שלך!
+</p>
+<br>
+</div>
+</div>
 
-
-}
-  .zindex{
-    position: relative;
-    margin-top: -67px;
-
-  }
-
-  .rec {
-  height: 140px;
-  width: 220px;
-  background-color: black;
-  animation: 
-    pulse 3s ease infinite alternate, 
-    nudge 5s linear infinite alternate;  
-  border-radius: 5%;
-  position:absolute;
-  border: 2px solid black;
-  z-index: 1;
-}
-
-.parall {
-	transform: skew(-20deg);
-	background: rgb(212,175,55);
-  border-radius: 15%;
-  margin-left: 30px;
-  margin-top: -70px;
-  z-index: -2;
-  width: 30px;
-  height: 50px;
-}
-.parall:before {
-  content: '';
-  position: absolute;
-  height: 90%;
-  width: 100%;
-
-}
-.parall:before {
-  border-top: 2px solid black;
-  border-left: 2px solid black;
-  border-radius: 15%;
-}
-
-.door{
-  width: 90px;
-  height: 70px;
-  background: rgb(212,175,55);
-  border-radius: 20%;
-  display:block;
-  margin-left: -70px;
-  margin-top: 70px;
-  border: 2px solid black;
-  position: absolute;
-    animation: 
-    pulse 3s ease infinite alternate, 
-    nudge 5s linear infinite alternate;  
-    
-}
-.window{
-      border-bottom: 42px solid black;
-      border-left: 25px solid black;
-      border-right: 30px solid black;
-      border-radius: 5%;
-      margin-left: 8px;
-      margin-top: 6px;
-      position: absolute;
-     
-}
-.handle {
-  border: 3px solid black;
-  border-radius: 5px;
-  width: 15px;
-  opacity: 1;
-  margin-top: 15px;
-  margin-left: 45px;
-}
-
-
-@keyframes pulse {
-  0%, 100% {
-    background-color: rgb(212,175,55);
-  }
-  50% {
-    background-color: rgb(212,175,55);
-  }
-}
-@keyframes tire {
-  0%, 100% {
-    background-color: black;
-  }
-  50% {
-    background-color:black;
-  }
-}
-@keyframes nudge {
-  0%, 100% {
-    transform: translate(300px, 0);
-  }
-  
-  50% {
-    transform: translate(600px, 0);
-  }
-  
-  80% {
-    transform: translate(300px, 0);
-  }
-}
-
-
-
-</style>
-
-
-<div class="rec"></div>
-<div class="door"> <div class="handle"></div><div class="parall" style="width: 80px; height: 60px;"> <div class="window" ></div> </div></div>
-<div class="elementl"> <div class="wheel"></div></div>
-<div class="elementr"> <div class="wheel"></div></div>
-<div class="zindex">
-   <div class="tirerl" ><div class="wheel" ></div></div>
-   <div class="tirerr"><div class="wheel" ></div></div>
+<div class="wrap">
+<div class="circle">אמינות<br><img src="/images/quality.png" height="28" width="28" alt="quality"></div>
+<div class="circle">שירות<br><img src ="/images/service.png" height="30" width="30" alt="service"></div>
+<div class="circle">מהירות<br><img style="margin-top: -8px"src ="/images/speed.png" height="40" width="40" alt="speed"></div>
+<div class="circle">מגוון<br><img src ="/images/catalog.png" height="30" width="30" alt="catalog"></div>
+<div class="circle">איכות<br><img src="/images/reliability.png" height="30" width="30" alt="reliability"></div>
 </div>
 
 
+<script>
+    $('.form').on('submit', (e)=> {
+      e.preventDefault();
 
-<div class="jumbotron jumbotron-fluid text-center text-muted p-3">
-  <div class="container">
-    <h1 class="display-4 ">ברוכים הבאים לעלמא</h1>
-    <p dir="rtl" class="display-6">החברה המובילה בארץ לשיווק ושינוע מזון בטמפרטורה מבוקרת למסעדות, מוסדות ועסקים.</p>
-    <p dir="rtl" class="lead">עלמא נוסדה תוך כוונה להנגיש את השירות הטוב ביותר, המוצרים הטובים ביותר והמחירים הנוחים ביותר.</p>
-    <p dir="rtl" class="lead"></p>
-    <a href="/catalog" class="btn btn-outline-warning btn-lg">המוצרים שלנו</a>
-  </div>
+
+      const name = $('#name').val().trim();
+      const number = $('#number').val().trim();
+      const subject = $('#subject').val().trim();
+      const textarea = $('#message').val().trim();
+      const data = {
+        name,
+        number,
+        subject,
+        textarea
+      };
+      $.post('/contact-us/send',data) 
+    });
+
+</script>
+
+
+<div class="font" style="font-weight: bold;" id="div_contact">
+  <div class="container text-center">
+    <h1 style="font-size: 30px;">צרו איתנו קשר</h1>
+    <p > ניתן ליצור עמנו קשר בימים א' עד ה' בין השעות 8:00 ל18:00 בטלפון או במייל </p>
+    <address>
+      <a href="tel:+972547578782">חייגו אלינו</a>
+    </address>
+    <address>
+      <a href="mailto:almacustomerserviceil@gmail.com">שלחו אלינו מייל</a><br> 
+    </address>
+    <p dir="rtl">רוצים שאנחנו נחזור אליכם? השאירו פרטים ואנחנו נחזור אליכם במהלך היום.</p>
+    <p style="font-size: 12px; color:rgb(212,175,55);" dir="rtl"> *בפניה לאחר שעות הפעילות, נחזור אליכם ביום הפעילות הבא. </p>
+    </div>
+
 </div>
 
+{{#each alert}}
+<div dir="rtl" class ="alert alert-warning alert-dismissible fade show" role="alert">
+  {{msg}}
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+{{/each}}
+
+  
+<div dir="rtl" class="font" style=" border-radius: 5px; padding: 20px;">
+<form action="/contact-us/send"method="POST" id="form" class="text-center">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="name">שם מלא*:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="name" name="name" required="required"  >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="number">מספר טלפון* (זמין לחזרה אליכם):</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="number" name="number" required="required"  >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">נושא:</label>
+      </div>
+      <div class="col-75">
+        <select id="subject" name="subject" type="option">
+          <option>שירות לקוחות</option>
+          <option>מכירות</option>
+          <option>אחר</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="textarea">כתוב לנו:</label>
+      </div>
+      <div class="col-75">
+        <textarea id="message" name="textarea" placeholder="אופציה" style="height:200px"></textarea>
+      </div>
+    </div>
+      <div class="form-group row">
+    <div class="offset-0 col-5 ">
+      <button id ="submit"  name="submit" type="submit" class="btn">שלח</button>
+</div>
+    </div>
+  </form>
+</div>
+</div>
+</body>
+</html>

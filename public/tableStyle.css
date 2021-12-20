@@ -1,24 +1,21 @@
 
 th, td {
     border:2px solid black;
-    text-align: center;
+    text-align: center !important;
     padding: 18px;
-    font-size:22px;
+    font-size:15px;
     color: #000;
     font-family: 'Heebo', sans-serif;
   }
   th{
-    font-size: 28px;
+    font-size: 20px;
   }
   table {
     table-layout: fixed;
-    width: 75%;
+    width: 100%;
     border-collapse: collapse;
     border: 3px solid rgb(212,175,55);
-    margin-left: 15%;
-    margin-right: 15%;
     padding: 15px;
-    
   }
   .dataTables_filter {
      color: black;
@@ -45,14 +42,16 @@ th, td {
     font-weight:bold;
   }
   h1{
-    color: rgb(212,175,55);
-     text-shadow: 4px 3px #000;
+    color: #000;
+    text-shadow: 0 0 5px rgb(212,175,55), 0 0 10px rgb(212,175,55), 0 0 15px rgb(212,175,55), 0 0 20px #cea972, 0 0 25px #cea972, 0 0 30px #cea972, 0 0 35px #cea972;
+    font-family: 'Heebo', sans-serif;
      font-weight: bold;
      font-family: 'Heebo', sans-serif;
-     font-size: 4rem;
+     font-size: 2rem;
      letter-spacing: 4px;
      margin-bottom: 1rem;
 }
+
 table.dataTable{
     clear:both;
     margin-top:6px !important;

@@ -1,123 +1,128 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
-
 <style>
  .row{
-  margin:auto;
-  margin-right: 180px;
-  width: 70%;
-  padding: 10px;
+   width: 70%;
+   margin: 0 auto !important;
+   float: none;
+   margin-bottom: 10px;
  }
- .card{
-   text-align: center;
-   margin-bottom: 35px;
-   margin-top: 35px;
-   margin-right: 10px;
- }
- .btn{
+
+.btn{
    background-color:rgb(212,175,55);
    font-weight: bold;
    font-family: 'Heebo', sans-serif;
  }
-.card-body{
+ .card-body{
   color: rgb(207,181,59);
   background: #000;
   font-family: 'Heebo', sans-serif;
-   
-}
-.card-header{
-  color: #000;
-   font-weight: bold;
-   font-size: 20px;
-   background: rgb(207,181,59);
-   font-family: 'Heebo', sans-serif;
-
 }
 .card-title{
   color: rgb(207,181,59);
+  text-shadow: 2px 1px 2px seashell,0px 1px 2px seashell;
    font-weight: bold;
    font-family: 'Heebo', sans-serif;
-
+   font-size:xx-large;
 }
+ .card{
+   height: 25rem;
+   width: 20rem;
+   margin-bottom: 4rem;
+   margin-left: 1rem;
+   box-shadow: 0 4px 8px 0 rgb(212,175,55), 0 4px 8px 0 rgb(212,175,55);
+   background-color: transparent !important;
+   border: 1px solid rgb(212,175,55) !important;
+ }
 h1{
-     color: rgb(212,175,55);
-      text-shadow: 4px 3px #000;
+      color: #000;
       font-weight: bold;
       font-family: 'Heebo', sans-serif;
+      font-size: 30px;
+      letter-spacing: 4px;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 5px rgb(212,175,55), 0 0 10px rgb(212,175,55), 0 0 15px rgb(212,175,55), 0 0 20px #cea972, 0 0 25px #cea972, 0 0 30px #cea972, 0 0 35px #cea972;
 }
+
+.lead{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Heebo', sans-serif;
+    color: #000;
+}
+ @media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="row"] {
+    width: 100%;
+  }
+ }
+
 </style>
 
+<br>
+<h1 class="text-center  ">קטלוג המוצרים שלנו</h1>
+<p dir="rtl" class="lead text-center" style="font-size: 15px;">יתכן כי קיימים מוצרים נוספים אשר לא רשומים בקטלוג, ניתן לפנות אלינו בכל בקשה למוצר ואנו נעשה את כל המאמצים בכדי להביא אותו אלייך.</p>
 
-    <h1 class="text-center display-4 ">קטלוג המוצרים שלנו</h1>
-    <p class="lead text-center">טקסט עלינו - להשלמה</p>
-
-
- <div class="row row-cols-1 row-cols-md-3 g-2 ">
-  <div class="col">
-    <div class="card  " style="max-width: 18rem;">
-      <div class="card-header">גבינות</div>
-      <div class="card-body ">
-        <h5 class="card-title">מבחר סוגי גבינות</h5>
-        <p class="card-text">אנו משווקים גבינות במשקלים שונים, ניתן לראות ליד כל סלט את הגדלים המגיעים ממנו</p>
-        <a href="/catalog/cheeses" class="btn btn-warning"> גבינות</a>
-      </div>
-    </div>
-</div>
- <div class="col">
-    <div class="card  " style="max-width: 18rem;">
-      <div class="card-header">סלטים</div>
-      <div class="card-body ">
-        <h5 class="card-title">מבחר סוגי סלטים</h5>
-        <p class="card-text">אנו משווקים סלטים במספר גדלים שונים, ניתן לראות ליד כל סלט את הגדלים המגיעים ממנו</p>
-        <a href="/catalog/salads" class="btn btn-warning"> סלטים</a>
-      </div>
-    </div>  
- </div>
-  <div class="col">
-    <div class="card " style="max-width: 18rem;">
-      <div class="card-header">רטבים</div>
-      <div class="card-body ">
-        <h5 class="card-title">מבחר סוגי רטבים</h5>
-        <p class="card-text">אנו משווקים רטבים במספר גדלים שונים, ניתן לראות ליד כל סלט את הגדלים המגיעים ממנו</p>
-        <a href="/catalog/sauces" class="btn btn-warning "> רטבים</a>
-      </div>
-    </div>
+<div class="row row-cols-1 row-cols-md-3">
+<div class="col">
+<div class="card text-center" >
+  <img src="/images/salads.jpg" class="card-img-top" height="180"  alt="salads">
+  <div class="card-body">
+    <h5 class="card-title ">סלטים</h5>
+    <p dir="rtl" class="card-text">אנו משווקים את כל סוגי הסלטים בגדלים שונים וכמויות שונות, ניתן לראות ליד כל סלט את הגדלים המגיעים ממנו.</p>
+    <a href="/catalog/salads"  class="btn ">כניסה</a>
   </div>
-   <div class="col">
-    <div class="card " style="max-width: 18rem;">
-      <div class="card-header">ירקות קפואים</div>
-      <div class="card-body ">
-        <h5 class="card-title"> מבחר סוגי ירקות קפואים</h5>
-        <p class="card-text">אנו משווקים ירקות במספר גדלים שונים, ניתן לראות ליד כל סלט את הגדלים המגיעים ממנו</p>
-        <a href="/catalog/סלטים" class="btn btn-warning"> ירקות קפואים</a>
-      </div>
-    </div>
-   </div>
-    <div class="col">
-    <div class="card  " style="max-width: 18rem;">
-      <div class="card-header">דגים</div>
-      <div class="card-body ">
-        <h5 class="card-title"> מבחר סוגי דגים </h5>
-        <p class="card-text">אנו משווקים ירקות במספר גדלים שונים, ניתן לראות ליד כל סלט את הגדלים המגיעים ממנו</p>
-        <a href="/catalog/סלטים" class="btn btn-warning"> דגים</a>
-      </div>
-    </div>
-    </div>
-     <div class="col">
-   <div class="card   " style="max-width: 18rem;">
-      <div class="card-header">נקניקים</div>
-      <div class="card-body ">
-        <h5 class="card-title"> מבחר סוגי נקניקים</h5>
-        <p class="card-text">אנו משווקים ירקות במספר גדלים שונים, ניתן לראות ליד כל סלט את הגדלים המגיעים ממנו</p>
-        <a href="/catalog/סלטים" class="btn btn-warning"> נקניקים</a>
-      </div>
-   </div>
-    </div>
+  </div>
+</div>
 
+<div class="col">
+<div class="card text-center" >
+  <img src="/images/sauce.jpg"  class="card-img-top" height="180" width="20" alt="sauces">
+  <div class="card-body">
+    <h5 class="card-title ">רטבים וממרחים</h5>
+    <p dir="rtl" class="card-text">אנו משווקים רטבים וממרחים בגדלים שונים וכמויות שונות, ניתן לראות ליד כל מוצר את הגדלים המגיעים ממנו.</p>
+    <a href="/catalog/sauces"  class="btn ">כניסה</a>
+  </div>
+  </div>
+</div>
 
-    
+<div class="col">
+<div class="card text-center" >
+  <img src="/images/ירקות.jpg" class="card-img-top" height="180"  alt="vegetables">
+  <div class="card-body">
+    <h5 class="card-title ">מוצרים קפואים</h5>
+    <p dir="rtl" class="card-text">אנו משווקים מוצרים קפואים (בשרים, פירות וירקות) ניתן לראות ליד כל מוצר את הכמויות המגיעות ממנו.</p>
+    <a href="/catalog/vegetables"  class="btn">כניסה</a>
+  </div>
+  </div>
+</div>
 
+<div class="col">
+<div class="card text-center" style="height: 20rem;">
+  <img src="/images/fish.jpg" class="card-img-top" height="180"  alt="fish">
+  <div class="card-body">
+    <h5 class="card-title ">דגים</h5>
+    <p dir="rtl" class="card-text">אנו משווקים את כל סוגי הדגים במבחר משקלים.</p>
+  </div>
+  </div>
+</div>
 
+<div class="col">
+<div class="card text-center" style="height: 20rem;">
+  <img src="/images/נקניקים.jpg" class="card-img-top" height="180"  alt="Sausages">
+  <div class="card-body">
+    <h5 class="card-title ">נקניקים</h5>
+    <p dir="rtl" class="card-text">אנו משווקים את כל סוגי הנקניקים במבחר משקלים.</p>
+  </div>
+</div>
+</div>
 
+<div class="col">
+<div class="card text-center" style="height: 20rem;">
+  <img src="/images/cheese.jpg" class="card-img-top" height="180"  alt="cheese">
+  <div class="card-body">
+    <h5 class="card-title ">גבינות</h5>
+    <p dir="rtl" class="card-text">אנו משווקים את כל סוגי הגבינות במבחר משקלים.</p>
+  </div>
+  </div>
+</div>
+</div>
 

@@ -1,48 +1,103 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+
 <style>
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.sr-only {
+  .nav-link,.dropbtn{
+    color: black !important;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 20px;
+    }
+  .nav-link:hover,.dropbtn,.dropdown-item:hover  {
+    background-color: rgb(212,175,55) !important;
+    } 
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="navbar-nav"] {
+      background-color: rgb(212,175,55);
+      }
+    }
+
+  .navbar-dark {
+    background: #fff;
+    height: 100px;
+    box-shadow: 0px 2px 5px #777;
+  }
+  .navbar-brand {
+    transform: translateX(-50%);
+    left: 82%;
+    top:16px ;
     position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
+    }
+  .collapse {
+    transform: translateX(-50%);
+    left: 63%;
+    margin-top: 20px;
+    top:10px ;
+    position: absolute;
+   }
+   @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="collapse"] {
+      transform: translateX(0%);
+      left: 0%;
+      margin-top: 0px;
+      top:0px ;
+      position: relative;
+      text-align: center;
+      }
+    }
+
+  .dropdown-item {
+    margin-left: 1px;
+    font-family: 'Heebo', sans-serif;
 }
+       
+  .navbar-dark .navbar-toggler {
+    color: rgb(212,175,55) !important;
+    border-color: #000 !important;
+    }
+  .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(212, 175, 55, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+     }
+  .dropdown-menu{
+    border: 2px solid rgb(212,175,55) !important;
+    text-align: center !important;
+    
+     }
+  .dropdown:hover .dropdown-menu {display: block;}
+
 
 </style>
-<nav class="navbar navbar-expand-lg sticky-top navbar-dark mb-5">
-    <a class="navbar-brand" href="/"><img src="/images/עלמא.png" width = "180" height = "110"></a> 
-    <div class="navbar-header">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-     <span class="sr-only">Toggle navigation</span>
-     <i class="fa fa-bars"></i>
+
+
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/"><img src="/images/עלמא2.png"  height="50"></a> 
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-      <div class="navbar-nav ">
-        <a class="nav-link" href="/contact-us">צור קשר</a>
-        <div class="dropdown">
-        <a class="dropbtn" href="/catalog">קטלוג מוצרים</a>
-        <div class="dropdown-content">
-          <a href="/catalog/salads">סלטים</a>
-          <a href="/catalog/sauces">רטבים וממרחים</a>
-          <a href="/catalog/vegetables">מוצרים קפואים</a>
-        </div>
-        </div>
-        <a class="nav-link" href="/about">עלינו</a>
+    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+      <ul class="navbar-nav">
+        <a class="nav-link" id="contact" href="#div_contact">צור קשר</a>
+        <li class="nav-item dropdown">
+          <a dir="rtl" class="nav-link dropdown" href="/catalog" role="button">
+            קטלוג מוצרים
+          </a>
+          <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="/catalog/salads">סלטים</a></li>
+            <li><a class="dropdown-item" href="/catalog/sauces">רטבים וממרחים</a></li>
+            <li><a class="dropdown-item" href="/catalog/vegetables">מוצרים קפואים</a></li>
+            <li><a class="dropdown-item">דגים</a></li>
+            <li><a class="dropdown-item">נקניקים</a></li>
+            <li><a class="dropdown-item">גבינות</a></li>
+          </ul>
+        </li>
         <a class="nav-link" aria-current="page" href="/">דף הבית</a>
-      </div>
-  </div>
+      </ul>
+    </div>
   </div>
 </nav>

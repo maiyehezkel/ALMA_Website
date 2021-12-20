@@ -1,0 +1,136 @@
+
+ .btn {
+    color: #000;
+    background-color: rgb(212,175,55);
+    border-color: #000
+}
+.btn:hover{
+    background-color: black;
+    color: rgb(212,175,55);
+}
+h1{
+    color: #000;
+    text-shadow: 0 0 5px rgb(212,175,55), 0 0 10px rgb(212,175,55), 0 0 15px rgb(212,175,55), 0 0 20px #cea972, 0 0 25px #cea972, 0 0 30px #cea972, 0 0 35px #cea972;
+    font-family: 'Heebo', sans-serif;
+
+}
+.font{
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+  }
+  a{
+    color: rgb(212,175,55);
+    font-size: 18px;
+  }
+  .alert-warning {
+    color: #000;
+    background-color: rgb(212,175,55);
+    border-color: #000;
+    text-align: center;
+    width:50%; 
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    margin-left: 25%;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  .about{
+    font-weight: bold;
+    width: 60%;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="about"] {
+    width: 100%;
+  }
+}
+.center{
+    margin-left: 400px;
+  }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="center"] {
+      margin-left: 0px;
+    }
+  }
+  .circle {
+    padding-top: 10px;
+    height: 60px;
+    width: 60px;
+    background-color: rgb(212,175,55);
+    animation-name: stretch;
+    animation-duration: 1.5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 10;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    border-radius: 100%;
+    display:inline-block;
+    margin-left: 60px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff;
+    filter: drop-shadow(0 0 0.2rem rgb(139,69,19));
+  }
+  .wrap{
+    width: 100%;
+    height: auto;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-left: -30px;
+  }
+  @keyframes stretch {
+    0% {
+      transform: scale(1);
+      
+    }
+
+    100% {
+      transform: scale(.2);
+      
+    }
+  }
+  .start{
+    text-shadow: 0 0 5px rgb(212,175,55), 0 0 10px rgb(212,175,55), 0 0 15px rgb(212,175,55), 0 0 20px #cea972, 0 0 25px #cea972, 0 0 30px #cea972, 0 0 35px #cea972;
+}

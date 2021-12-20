@@ -4,11 +4,11 @@ const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'almacustomerserviceil@gmail.com',
-    pass: '*******' 
+    pass: '08051997Om' 
   }
 });
 
-const sendMail = (number, name, subject, email,message)=>{
+const sendMail = (number, name, subject, message)=>{
     const mailOptions = {
         from: '"ALMA WEBSITE" <almacustomerserviceil@gmail.com>',
         to: 'almacustomerserviceil@gmail.com',
@@ -17,13 +17,12 @@ const sendMail = (number, name, subject, email,message)=>{
         subject: subject,
         text: "שם:"+name+
             " טלפון:"+number+
-            " כתובת מייל:"+email+
             " הודעה:"+message
    
     };
     transporter.sendMail(mailOptions, function(err, info){
         if (err) {
-            console.log(error);
+            console.log(err);
         } else {
             
             console.log('Email sent: ' + info.response);
