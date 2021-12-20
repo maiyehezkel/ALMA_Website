@@ -5,8 +5,8 @@ const sendMail = require('./contactMail');
 
 const { check, validationResult } = require('express-validator');
 
-
 const app = express();
+const port = process.env.PORT || 3000
 
 // handlebars
 app.engine('handlebars', exphbs());
@@ -71,4 +71,4 @@ app.get('/catalog/vegetables', function (req, res) {
 });
 
 
-app.listen(3000);
+app.listen(port);
